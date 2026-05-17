@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="2F80D417-D558-AE25-B498-1387B11F29B1" name="posts">
+<createdBy>labsfiap</createdBy>
+<createdTime>2026-05-13 23:20:54 UTC</createdTime>
+<ownerDesignName>modelo_Challenge</ownerDesignName>
+<engineerTo>
+<item key="AB6CB75E-7BBB-95AA-F9E8-B5F4C7E93268" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_post" id="35F00A41-5649-CA61-2504-CA51A7D03DF5">
+<createdBy>labsfiap</createdBy>
+<createdTime>2026-05-13 23:21:00 UTC</createdTime>
+<ownerDesignName>modelo_Challenge</ownerDesignName>
+<engineerTo>
+<item key="AB6CB75E-7BBB-95AA-F9E8-B5F4C7E93268" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<ownDataTypeParameters>,15,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="conteudo" id="DD872AD1-024B-36D5-68F4-427DBCE9F287">
+<createdBy>yumin</createdBy>
+<createdTime>2026-05-15 22:33:09 UTC</createdTime>
+<ownerDesignName>modelo_Challenge</ownerDesignName>
+<engineerTo>
+<item key="AB6CB75E-7BBB-95AA-F9E8-B5F4C7E93268" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="status_post" id="3F74C984-A969-2502-574C-979924B7A1BC">
+<createdBy>yumin</createdBy>
+<createdTime>2026-05-15 22:51:00 UTC</createdTime>
+<ownerDesignName>modelo_Challenge</ownerDesignName>
+<engineerTo>
+<item key="AB6CB75E-7BBB-95AA-F9E8-B5F4C7E93268" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dt_criacao" id="2065537F-A3AF-0AE3-629E-6A2CC15A3F8E">
+<createdBy>yumin</createdBy>
+<createdTime>2026-05-15 22:51:26 UTC</createdTime>
+<ownerDesignName>modelo_Challenge</ownerDesignName>
+<engineerTo>
+<item key="AB6CB75E-7BBB-95AA-F9E8-B5F4C7E93268" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dt_atualizacao" id="E6EDB804-6EF7-0100-C45B-7F00469AAC4C">
+<createdBy>yumin</createdBy>
+<createdTime>2026-05-15 22:51:37 UTC</createdTime>
+<ownerDesignName>modelo_Challenge</ownerDesignName>
+<engineerTo>
+<item key="AB6CB75E-7BBB-95AA-F9E8-B5F4C7E93268" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C41C1E51-821A-691B-B93C-82CE05CC4F4C" name="posts PK">
+<createdBy>labsfiap</createdBy>
+<createdTime>2026-05-13 23:21:25 UTC</createdTime>
+<ownerDesignName>modelo_Challenge</ownerDesignName>
+<engineerTo>
+<item key="AB6CB75E-7BBB-95AA-F9E8-B5F4C7E93268" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>35F00A41-5649-CA61-2504-CA51A7D03DF5</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

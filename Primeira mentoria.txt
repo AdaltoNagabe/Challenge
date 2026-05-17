@@ -1,0 +1,9 @@
+20 a 40 anos
+desafio e que o avatar aprenda com a integracao com o usuario
+
+arquitetura
+qual a IA
+GPT cloud
+hugging face treinado
+
+postgree

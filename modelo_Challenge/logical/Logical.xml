@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="25993DF9-EF72-D5C3-15D3-3C54378BC7E2" mainViewID="C418C159-86D8-DD23-E0F2-8D99E2E628BF">
+<createdBy>labsfiap</createdBy>
+<createdTime>2026-05-13 23:12:18 UTC</createdTime>
+<ownerDesignName>modelo_Challenge</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

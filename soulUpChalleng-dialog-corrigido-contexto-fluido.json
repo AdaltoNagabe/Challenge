@@ -1,0 +1,2765 @@
+{
+  "intents": [
+    {
+      "intent": "boas_vindas",
+      "examples": [
+        {
+          "text": "abrir app"
+        },
+        {
+          "text": "acessar"
+        },
+        {
+          "text": "boa noite"
+        },
+        {
+          "text": "boa tarde"
+        },
+        {
+          "text": "bom dia"
+        },
+        {
+          "text": "comecar"
+        },
+        {
+          "text": "eae"
+        },
+        {
+          "text": "entrar"
+        },
+        {
+          "text": "fala ai"
+        },
+        {
+          "text": "iniciar"
+        },
+        {
+          "text": "oi"
+        },
+        {
+          "text": "ola"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "explorar_post",
+      "examples": [
+        {
+          "text": "abrir feed"
+        },
+        {
+          "text": "descobrir post"
+        },
+        {
+          "text": "explorar"
+        },
+        {
+          "text": "mostrar conteudos"
+        },
+        {
+          "text": "mostrar novidades"
+        },
+        {
+          "text": "mostrar post"
+        },
+        {
+          "text": "quero ver conteudo"
+        },
+        {
+          "text": "ver feed"
+        },
+        {
+          "text": "ver fotos"
+        },
+        {
+          "text": "ver novidades"
+        },
+        {
+          "text": "ver posts"
+        },
+        {
+          "text": "ver video"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "interagir_post",
+      "examples": [
+        {
+          "text": "amei"
+        },
+        {
+          "text": "comentar"
+        },
+        {
+          "text": "curti"
+        },
+        {
+          "text": "curtir post"
+        },
+        {
+          "text": "gostei"
+        },
+        {
+          "text": "gostei disso"
+        },
+        {
+          "text": "gostei muito"
+        },
+        {
+          "text": "incrivel"
+        },
+        {
+          "text": "mandar like"
+        },
+        {
+          "text": "parabens"
+        },
+        {
+          "text": "reagir"
+        },
+        {
+          "text": "top"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "participar_desafio",
+      "examples": [
+        {
+          "text": "comecar desafio"
+        },
+        {
+          "text": "desafio comunidade"
+        },
+        {
+          "text": "desafio natureza"
+        },
+        {
+          "text": "desafios disponiveis"
+        },
+        {
+          "text": "desafio semanal"
+        },
+        {
+          "text": "desafio soulup"
+        },
+        {
+          "text": "entrar em competicao"
+        },
+        {
+          "text": "entrar no desafio"
+        },
+        {
+          "text": "participar comunidade"
+        },
+        {
+          "text": "participar de desafio"
+        },
+        {
+          "text": "quero competir"
+        },
+        {
+          "text": "quero desafio"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "ver_perfil",
+      "examples": [
+        {
+          "text": "abrir perfil"
+        },
+        {
+          "text": "acessar perfil"
+        },
+        {
+          "text": "dados do perfil"
+        },
+        {
+          "text": "mostrar perfil"
+        },
+        {
+          "text": "quem postou"
+        },
+        {
+          "text": "quero ver este usuario"
+        },
+        {
+          "text": "ver comunidades"
+        },
+        {
+          "text": "ver conta"
+        },
+        {
+          "text": "ver informacoes"
+        },
+        {
+          "text": "ver perfil"
+        },
+        {
+          "text": "ver status"
+        },
+        {
+          "text": "ver usuario"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "acao",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "comentar",
+          "synonyms": [
+            "comentario",
+            "mandar comentario",
+            "responder"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "compartilhar",
+          "synonyms": [
+            "enviar",
+            "mandar para alguem",
+            "share"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "curtir",
+          "synonyms": [
+            "amei",
+            "gostei",
+            "like",
+            "mandar like"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "salvar",
+          "synonyms": [
+            "favoritar",
+            "guardar",
+            "ver depois"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "frequencia",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "diario",
+          "synonyms": [
+            "todo dia"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "mensal",
+          "synonyms": [
+            "por mes"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "semanal",
+          "synonyms": [
+            "por semana"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "nivel_desafio",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "dificil",
+          "synonyms": [
+            "avancado",
+            "hard",
+            "pesado"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "facil",
+          "synonyms": [
+            "iniciante",
+            "leve",
+            "simples"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "medio",
+          "synonyms": [
+            "intermediario",
+            "moderado"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "tema_post",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "bem estar",
+          "synonyms": [
+            "fitness",
+            "treino"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "desafio",
+          "synonyms": [
+            "competicao",
+            "prova"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "natureza",
+          "synonyms": [
+            "ar livre",
+            "meio ambiente"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "saude",
+          "synonyms": [
+            "bem estar",
+            "vida saudavel"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "soulUp",
+          "synonyms": [
+            "bonus",
+            "comunidade"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "tipo_post",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "foto",
+          "synonyms": [
+            "imagem",
+            "post com foto"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "story",
+          "synonyms": [
+            "status",
+            "stories"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "video",
+          "synonyms": [
+            "filme",
+            "reels",
+            "vídeo"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    },
+    "integracoes": {
+      "webchat": "Integração prevista somente por texto usando o Webchat do IBM Watson Assistant.",
+      "telegram": "Integração prevista por texto e áudio. Para áudio, utilizar STT para converter voz em texto antes de enviar ao Watson e TTS para transformar a resposta em áudio."
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Bem-vindo",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Olá! Eu sou o assistente da SoulUp. Digite “começar” para ver o menu!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "Bem-vindo",
+      "context": {
+        "fluxo_atual": "inicio"
+      }
+    },
+    {
+      "type": "standard",
+      "title": "Menu principal",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Bem-vindo ao assistente IA SoulUp! Você pode escolher uma opção:\n\n- explorar posts\n- participar de desafio\n- curtir, comentar, compartilhar ou salvar post\n- ver perfil"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#boas_vindas",
+      "dialog_node": "node_menu_principal",
+      "context": {
+        "fluxo_atual": "menu"
+      },
+      "previous_sibling": "Bem-vindo"
+    },
+    {
+      "type": "standard",
+      "title": "Explorar vídeo de natureza",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Aqui estão vídeos sobre natureza para você explorar."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#explorar_post && @tipo_post:video && @tema_post:natureza",
+      "dialog_node": "node_os_exp_video_natureza",
+      "context": {
+        "fluxo_atual": "explorar_post",
+        "ultimo_tipo_post": "video",
+        "ultimo_tema_post": "natureza"
+      },
+      "previous_sibling": "node_menu_principal",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_menu_principal"
+      }
+    },
+    {
+      "type": "standard",
+      "title": "Explorar foto de saúde",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Aqui estão fotos sobre saúde e vida saudável."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#explorar_post && @tipo_post:foto && @tema_post:saude",
+      "dialog_node": "node_os_exp_foto_saude",
+      "context": {
+        "fluxo_atual": "explorar_post",
+        "ultimo_tipo_post": "foto",
+        "ultimo_tema_post": "saude"
+      },
+      "previous_sibling": "node_os_exp_video_natureza",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_menu_principal"
+      }
+    },
+    {
+      "type": "standard",
+      "title": "Explorar story de desafio",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Aqui estão stories relacionados aos desafios do SoulUp."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#explorar_post && @tipo_post:story && @tema_post:desafio",
+      "dialog_node": "node_os_exp_story_desafio",
+      "context": {
+        "fluxo_atual": "explorar_post",
+        "ultimo_tipo_post": "story",
+        "ultimo_tema_post": "desafio"
+      },
+      "previous_sibling": "node_os_exp_foto_saude",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_menu_principal"
+      }
+    },
+    {
+      "type": "standard",
+      "title": "Curtir conteúdo de saúde",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Você curtiu um conteúdo de saúde. Ótima escolha!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#interagir_post && @acao:curtir && @tema_post:saude",
+      "dialog_node": "node_os_int_curtir_saude",
+      "context": {
+        "fluxo_atual": "interagir_post",
+        "ultima_acao": "curtir",
+        "ultimo_tema_post": "saude"
+      },
+      "previous_sibling": "node_os_exp_story_desafio",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_menu_principal"
+      }
+    },
+    {
+      "type": "standard",
+      "title": "Comentar conteúdo de natureza",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Digite seu comentário para o conteúdo de natureza."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#interagir_post && @acao:comentar && @tema_post:natureza",
+      "dialog_node": "node_os_int_comentar_natureza",
+      "context": {
+        "fluxo_atual": "interagir_post",
+        "ultima_acao": "comentar",
+        "ultimo_tema_post": "natureza"
+      },
+      "previous_sibling": "node_os_int_curtir_saude",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_menu_principal"
+      }
+    },
+    {
+      "type": "standard",
+      "title": "Desafio fácil semanal",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Perfeito! Vou te mostrar desafios fáceis semanais."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#participar_desafio && @nivel_desafio:facil && @frequencia:semanal",
+      "dialog_node": "node_os_des_facil_semanal",
+      "context": {
+        "fluxo_atual": "participar_desafio",
+        "ultimo_nivel_desafio": "facil",
+        "ultima_frequencia": "semanal"
+      },
+      "previous_sibling": "node_os_int_comentar_natureza",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_menu_principal"
+      }
+    },
+    {
+      "type": "standard",
+      "title": "Desafio médio diário",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Perfeito! Vou te mostrar desafios médios diários."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#participar_desafio && @nivel_desafio:medio && @frequencia:diario",
+      "dialog_node": "node_os_des_medio_diario",
+      "context": {
+        "fluxo_atual": "participar_desafio",
+        "ultimo_nivel_desafio": "medio",
+        "ultima_frequencia": "diario"
+      },
+      "previous_sibling": "node_os_des_facil_semanal",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_menu_principal"
+      }
+    },
+    {
+      "type": "standard",
+      "title": "Desafio difícil mensal",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Perfeito! Vou te mostrar desafios difíceis mensais."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#participar_desafio && @nivel_desafio:dificil && @frequencia:mensal",
+      "dialog_node": "node_os_des_dificil_mensal",
+      "context": {
+        "fluxo_atual": "participar_desafio",
+        "ultimo_nivel_desafio": "dificil",
+        "ultima_frequencia": "mensal"
+      },
+      "previous_sibling": "node_os_des_medio_diario",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_menu_principal"
+      }
+    },
+    {
+      "type": "standard",
+      "title": "Contexto explorar - vídeo natureza",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Aqui estão vídeos sobre natureza para você explorar."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "$fluxo_atual == \"explorar_post\" && @tipo_post:video && @tema_post:natureza",
+      "dialog_node": "node_ctx_exp_video_natureza",
+      "context": {
+        "fluxo_atual": "explorar_post",
+        "ultimo_tipo_post": "video",
+        "ultimo_tema_post": "natureza"
+      },
+      "previous_sibling": "node_os_des_dificil_mensal",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_menu_principal"
+      }
+    },
+    {
+      "type": "standard",
+      "title": "Contexto explorar - foto saúde",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Aqui estão fotos sobre saúde e vida saudável."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "$fluxo_atual == \"explorar_post\" && @tipo_post:foto && @tema_post:saude",
+      "dialog_node": "node_ctx_exp_foto_saude",
+      "context": {
+        "fluxo_atual": "explorar_post",
+        "ultimo_tipo_post": "foto",
+        "ultimo_tema_post": "saude"
+      },
+      "previous_sibling": "node_ctx_exp_video_natureza",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_menu_principal"
+      }
+    },
+    {
+      "type": "standard",
+      "title": "Contexto explorar - story desafio",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Aqui estão stories relacionados aos desafios do SoulUp."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "$fluxo_atual == \"explorar_post\" && @tipo_post:story && @tema_post:desafio",
+      "dialog_node": "node_ctx_exp_story_desafio",
+      "context": {
+        "fluxo_atual": "explorar_post",
+        "ultimo_tipo_post": "story",
+        "ultimo_tema_post": "desafio"
+      },
+      "previous_sibling": "node_ctx_exp_foto_saude",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_menu_principal"
+      }
+    },
+    {
+      "type": "standard",
+      "title": "Contexto explorar - foto",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Aqui estão posts em formato de foto para você explorar."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "$fluxo_atual == \"explorar_post\" && @tipo_post:foto",
+      "dialog_node": "node_ctx_exp_foto",
+      "context": {
+        "fluxo_atual": "explorar_post",
+        "ultimo_tipo_post": "foto"
+      },
+      "previous_sibling": "node_ctx_exp_story_desafio",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_menu_principal"
+      }
+    },
+    {
+      "type": "standard",
+      "title": "Contexto explorar - vídeo",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Aqui estão vídeos disponíveis no feed do SoulUp."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "$fluxo_atual == \"explorar_post\" && @tipo_post:video",
+      "dialog_node": "node_ctx_exp_video",
+      "context": {
+        "fluxo_atual": "explorar_post",
+        "ultimo_tipo_post": "video"
+      },
+      "previous_sibling": "node_ctx_exp_foto",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_menu_principal"
+      }
+    },
+    {
+      "type": "standard",
+      "title": "Contexto explorar - story",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Aqui estão stories recentes para você acompanhar."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "$fluxo_atual == \"explorar_post\" && @tipo_post:story",
+      "dialog_node": "node_ctx_exp_story",
+      "context": {
+        "fluxo_atual": "explorar_post",
+        "ultimo_tipo_post": "story"
+      },
+      "previous_sibling": "node_ctx_exp_video",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_menu_principal"
+      }
+    },
+    {
+      "type": "standard",
+      "title": "Contexto explorar - saúde",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Aqui estão conteúdos relacionados à saúde e vida saudável."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "$fluxo_atual == \"explorar_post\" && @tema_post:saude",
+      "dialog_node": "node_ctx_exp_saude",
+      "context": {
+        "fluxo_atual": "explorar_post",
+        "ultimo_tema_post": "saude"
+      },
+      "previous_sibling": "node_ctx_exp_story",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_menu_principal"
+      }
+    },
+    {
+      "type": "standard",
+      "title": "Contexto explorar - natureza",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Aqui estão conteúdos sobre natureza, ar livre e meio ambiente."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "$fluxo_atual == \"explorar_post\" && @tema_post:natureza",
+      "dialog_node": "node_ctx_exp_natureza",
+      "context": {
+        "fluxo_atual": "explorar_post",
+        "ultimo_tema_post": "natureza"
+      },
+      "previous_sibling": "node_ctx_exp_saude",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_menu_principal"
+      }
+    },
+    {
+      "type": "standard",
+      "title": "Contexto explorar - desafio",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Aqui estão posts sobre desafios, competições e provas."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "$fluxo_atual == \"explorar_post\" && @tema_post:desafio",
+      "dialog_node": "node_ctx_exp_desafio",
+      "context": {
+        "fluxo_atual": "explorar_post",
+        "ultimo_tema_post": "desafio"
+      },
+      "previous_sibling": "node_ctx_exp_natureza",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_menu_principal"
+      }
+    },
+    {
+      "type": "standard",
+      "title": "Contexto explorar - bem-estar",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Aqui estão conteúdos de bem-estar, treino e fitness."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "$fluxo_atual == \"explorar_post\" && @tema_post:(bem estar)",
+      "dialog_node": "node_ctx_exp_bemestar",
+      "context": {
+        "fluxo_atual": "explorar_post",
+        "ultimo_tema_post": "bem estar"
+      },
+      "previous_sibling": "node_ctx_exp_desafio",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_menu_principal"
+      }
+    },
+    {
+      "type": "standard",
+      "title": "Contexto interagir - curtir saúde",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Você curtiu um conteúdo de saúde. Ótima escolha!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "$fluxo_atual == \"interagir_post\" && @acao:curtir && @tema_post:saude",
+      "dialog_node": "node_ctx_int_curtir_saude",
+      "context": {
+        "fluxo_atual": "interagir_post",
+        "ultima_acao": "curtir",
+        "ultimo_tema_post": "saude"
+      },
+      "previous_sibling": "node_ctx_exp_bemestar",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_menu_principal"
+      }
+    },
+    {
+      "type": "standard",
+      "title": "Contexto interagir - comentar natureza",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Digite seu comentário para o conteúdo de natureza."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "$fluxo_atual == \"interagir_post\" && @acao:comentar && @tema_post:natureza",
+      "dialog_node": "node_ctx_int_comentar_natureza",
+      "context": {
+        "fluxo_atual": "interagir_post",
+        "ultima_acao": "comentar",
+        "ultimo_tema_post": "natureza"
+      },
+      "previous_sibling": "node_ctx_int_curtir_saude",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_menu_principal"
+      }
+    },
+    {
+      "type": "standard",
+      "title": "Contexto interagir - curtir",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Você curtiu esse post!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "$fluxo_atual == \"interagir_post\" && @acao:curtir",
+      "dialog_node": "node_ctx_int_curtir",
+      "context": {
+        "fluxo_atual": "interagir_post",
+        "ultima_acao": "curtir"
+      },
+      "previous_sibling": "node_ctx_int_comentar_natureza",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_menu_principal"
+      }
+    },
+    {
+      "type": "standard",
+      "title": "Contexto interagir - comentar",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Claro! Digite o comentário que deseja enviar."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "$fluxo_atual == \"interagir_post\" && @acao:comentar",
+      "dialog_node": "node_ctx_int_comentar",
+      "context": {
+        "fluxo_atual": "interagir_post",
+        "ultima_acao": "comentar"
+      },
+      "previous_sibling": "node_ctx_int_curtir",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_menu_principal"
+      }
+    },
+    {
+      "type": "standard",
+      "title": "Contexto interagir - compartilhar",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Post compartilhado com sucesso!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "$fluxo_atual == \"interagir_post\" && @acao:compartilhar",
+      "dialog_node": "node_ctx_int_compartilhar",
+      "context": {
+        "fluxo_atual": "interagir_post",
+        "ultima_acao": "compartilhar"
+      },
+      "previous_sibling": "node_ctx_int_comentar",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_menu_principal"
+      }
+    },
+    {
+      "type": "standard",
+      "title": "Contexto interagir - salvar",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Post salvo com sucesso para você ver depois."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "$fluxo_atual == \"interagir_post\" && @acao:salvar",
+      "dialog_node": "node_ctx_int_salvar",
+      "context": {
+        "fluxo_atual": "interagir_post",
+        "ultima_acao": "salvar"
+      },
+      "previous_sibling": "node_ctx_int_compartilhar",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_menu_principal"
+      }
+    },
+    {
+      "type": "standard",
+      "title": "Contexto desafio - fácil semanal",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Perfeito! Vou te mostrar desafios fáceis semanais."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "$fluxo_atual == \"participar_desafio\" && @nivel_desafio:facil && @frequencia:semanal",
+      "dialog_node": "node_ctx_des_facil_semanal",
+      "context": {
+        "fluxo_atual": "participar_desafio",
+        "ultimo_nivel_desafio": "facil",
+        "ultima_frequencia": "semanal"
+      },
+      "previous_sibling": "node_ctx_int_salvar",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_menu_principal"
+      }
+    },
+    {
+      "type": "standard",
+      "title": "Contexto desafio - médio diário",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Perfeito! Vou te mostrar desafios médios diários."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "$fluxo_atual == \"participar_desafio\" && @nivel_desafio:medio && @frequencia:diario",
+      "dialog_node": "node_ctx_des_medio_diario",
+      "context": {
+        "fluxo_atual": "participar_desafio",
+        "ultimo_nivel_desafio": "medio",
+        "ultima_frequencia": "diario"
+      },
+      "previous_sibling": "node_ctx_des_facil_semanal",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_menu_principal"
+      }
+    },
+    {
+      "type": "standard",
+      "title": "Contexto desafio - difícil mensal",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Perfeito! Vou te mostrar desafios difíceis mensais."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "$fluxo_atual == \"participar_desafio\" && @nivel_desafio:dificil && @frequencia:mensal",
+      "dialog_node": "node_ctx_des_dificil_mensal",
+      "context": {
+        "fluxo_atual": "participar_desafio",
+        "ultimo_nivel_desafio": "dificil",
+        "ultima_frequencia": "mensal"
+      },
+      "previous_sibling": "node_ctx_des_medio_diario",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_menu_principal"
+      }
+    },
+    {
+      "type": "standard",
+      "title": "Contexto desafio - fácil",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Vou te mostrar desafios fáceis para começar."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "$fluxo_atual == \"participar_desafio\" && @nivel_desafio:facil",
+      "dialog_node": "node_ctx_des_facil",
+      "context": {
+        "fluxo_atual": "participar_desafio",
+        "ultimo_nivel_desafio": "facil"
+      },
+      "previous_sibling": "node_ctx_des_dificil_mensal",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_menu_principal"
+      }
+    },
+    {
+      "type": "standard",
+      "title": "Contexto desafio - médio",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Vou te mostrar desafios de nível médio."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "$fluxo_atual == \"participar_desafio\" && @nivel_desafio:medio",
+      "dialog_node": "node_ctx_des_medio",
+      "context": {
+        "fluxo_atual": "participar_desafio",
+        "ultimo_nivel_desafio": "medio"
+      },
+      "previous_sibling": "node_ctx_des_facil",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_menu_principal"
+      }
+    },
+    {
+      "type": "standard",
+      "title": "Contexto desafio - difícil",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Vou te mostrar desafios difíceis para quem quer se superar."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "$fluxo_atual == \"participar_desafio\" && @nivel_desafio:dificil",
+      "dialog_node": "node_ctx_des_dificil",
+      "context": {
+        "fluxo_atual": "participar_desafio",
+        "ultimo_nivel_desafio": "dificil"
+      },
+      "previous_sibling": "node_ctx_des_medio",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_menu_principal"
+      }
+    },
+    {
+      "type": "standard",
+      "title": "Contexto desafio - diário",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Aqui estão os desafios diários disponíveis."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "$fluxo_atual == \"participar_desafio\" && @frequencia:diario",
+      "dialog_node": "node_ctx_des_diario",
+      "context": {
+        "fluxo_atual": "participar_desafio",
+        "ultima_frequencia": "diario"
+      },
+      "previous_sibling": "node_ctx_des_dificil",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_menu_principal"
+      }
+    },
+    {
+      "type": "standard",
+      "title": "Contexto desafio - semanal",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Aqui estão os desafios semanais disponíveis."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "$fluxo_atual == \"participar_desafio\" && @frequencia:semanal",
+      "dialog_node": "node_ctx_des_semanal",
+      "context": {
+        "fluxo_atual": "participar_desafio",
+        "ultima_frequencia": "semanal"
+      },
+      "previous_sibling": "node_ctx_des_diario",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_menu_principal"
+      }
+    },
+    {
+      "type": "standard",
+      "title": "Contexto desafio - mensal",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Aqui estão os desafios mensais disponíveis."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "$fluxo_atual == \"participar_desafio\" && @frequencia:mensal",
+      "dialog_node": "node_ctx_des_mensal",
+      "context": {
+        "fluxo_atual": "participar_desafio",
+        "ultima_frequencia": "mensal"
+      },
+      "previous_sibling": "node_ctx_des_semanal",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_menu_principal"
+      }
+    },
+    {
+      "type": "standard",
+      "title": "Contexto desafio - saúde",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Aqui estão desafios voltados para saúde e hábitos saudáveis."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "$fluxo_atual == \"participar_desafio\" && @tema_post:saude",
+      "dialog_node": "node_ctx_des_saude",
+      "context": {
+        "fluxo_atual": "participar_desafio",
+        "ultimo_tema_post": "saude"
+      },
+      "previous_sibling": "node_ctx_des_mensal",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_menu_principal"
+      }
+    },
+    {
+      "type": "standard",
+      "title": "Contexto desafio - natureza",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Aqui estão desafios ligados à natureza e atividades ao ar livre."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "$fluxo_atual == \"participar_desafio\" && @tema_post:natureza",
+      "dialog_node": "node_ctx_des_natureza",
+      "context": {
+        "fluxo_atual": "participar_desafio",
+        "ultimo_tema_post": "natureza"
+      },
+      "previous_sibling": "node_ctx_des_saude",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_menu_principal"
+      }
+    },
+    {
+      "type": "standard",
+      "title": "Contexto perfil - comunidades",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Aqui estão as comunidades SoulUp relacionadas a esse perfil."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "$fluxo_atual == \"ver_perfil\" && @tema_post:soulUp",
+      "dialog_node": "node_ctx_perfil_comunidades",
+      "context": {
+        "fluxo_atual": "ver_perfil",
+        "ultimo_tema_post": "soulUp"
+      },
+      "previous_sibling": "node_ctx_des_natureza",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_menu_principal"
+      }
+    },
+    {
+      "type": "standard",
+      "title": "Contexto perfil - saúde",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Aqui estão perfis e informações ligados ao tema saúde."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "$fluxo_atual == \"ver_perfil\" && @tema_post:saude",
+      "dialog_node": "node_ctx_perfil_saude",
+      "context": {
+        "fluxo_atual": "ver_perfil",
+        "ultimo_tema_post": "saude"
+      },
+      "previous_sibling": "node_ctx_perfil_comunidades",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_menu_principal"
+      }
+    },
+    {
+      "type": "standard",
+      "title": "Contexto perfil - natureza",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Aqui estão perfis relacionados à natureza e meio ambiente."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "$fluxo_atual == \"ver_perfil\" && @tema_post:natureza",
+      "dialog_node": "node_ctx_perfil_natureza",
+      "context": {
+        "fluxo_atual": "ver_perfil",
+        "ultimo_tema_post": "natureza"
+      },
+      "previous_sibling": "node_ctx_perfil_saude",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_menu_principal"
+      }
+    },
+    {
+      "type": "standard",
+      "title": "Contexto perfil - desafio",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Aqui estão perfis que participam de desafios."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "$fluxo_atual == \"ver_perfil\" && @tema_post:desafio",
+      "dialog_node": "node_ctx_perfil_desafio",
+      "context": {
+        "fluxo_atual": "ver_perfil",
+        "ultimo_tema_post": "desafio"
+      },
+      "previous_sibling": "node_ctx_perfil_natureza",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_menu_principal"
+      }
+    },
+    {
+      "type": "standard",
+      "title": "Fluxo explorar posts",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Claro! Que tipo de conteúdo você quer explorar?\n\nVocê pode dizer: foto, vídeo, story, saúde, natureza, desafio ou bem-estar."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#explorar_post",
+      "dialog_node": "node_fluxo_explorar",
+      "context": {
+        "fluxo_atual": "explorar_post"
+      },
+      "previous_sibling": "node_ctx_perfil_desafio"
+    },
+    {
+      "type": "standard",
+      "title": "Vídeo de natureza",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Aqui estão vídeos sobre natureza para você explorar."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "@tipo_post:video && @tema_post:natureza",
+      "dialog_node": "child_exp_video_natureza",
+      "context": {
+        "fluxo_atual": "explorar_post",
+        "ultimo_tipo_post": "video",
+        "ultimo_tema_post": "natureza"
+      },
+      "parent": "node_fluxo_explorar",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_menu_principal"
+      }
+    },
+    {
+      "type": "standard",
+      "title": "Foto de saúde",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Aqui estão fotos sobre saúde e vida saudável."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "@tipo_post:foto && @tema_post:saude",
+      "dialog_node": "child_exp_foto_saude",
+      "context": {
+        "fluxo_atual": "explorar_post",
+        "ultimo_tipo_post": "foto",
+        "ultimo_tema_post": "saude"
+      },
+      "parent": "node_fluxo_explorar",
+      "previous_sibling": "child_exp_video_natureza",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_menu_principal"
+      }
+    },
+    {
+      "type": "standard",
+      "title": "Story de desafio",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Aqui estão stories relacionados aos desafios do SoulUp."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "@tipo_post:story && @tema_post:desafio",
+      "dialog_node": "child_exp_story_desafio",
+      "context": {
+        "fluxo_atual": "explorar_post",
+        "ultimo_tipo_post": "story",
+        "ultimo_tema_post": "desafio"
+      },
+      "parent": "node_fluxo_explorar",
+      "previous_sibling": "child_exp_foto_saude",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_menu_principal"
+      }
+    },
+    {
+      "type": "standard",
+      "title": "Foto",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Aqui estão posts em formato de foto para você explorar."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "@tipo_post:foto",
+      "dialog_node": "child_exp_foto",
+      "context": {
+        "fluxo_atual": "explorar_post",
+        "ultimo_tipo_post": "foto"
+      },
+      "parent": "node_fluxo_explorar",
+      "previous_sibling": "child_exp_story_desafio",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_menu_principal"
+      }
+    },
+    {
+      "type": "standard",
+      "title": "Vídeo",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Aqui estão vídeos disponíveis no feed do SoulUp."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "@tipo_post:video",
+      "dialog_node": "child_exp_video",
+      "context": {
+        "fluxo_atual": "explorar_post",
+        "ultimo_tipo_post": "video"
+      },
+      "parent": "node_fluxo_explorar",
+      "previous_sibling": "child_exp_foto",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_menu_principal"
+      }
+    },
+    {
+      "type": "standard",
+      "title": "Story",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Aqui estão stories recentes para você acompanhar."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "@tipo_post:story",
+      "dialog_node": "child_exp_story",
+      "context": {
+        "fluxo_atual": "explorar_post",
+        "ultimo_tipo_post": "story"
+      },
+      "parent": "node_fluxo_explorar",
+      "previous_sibling": "child_exp_video",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_menu_principal"
+      }
+    },
+    {
+      "type": "standard",
+      "title": "Saúde",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Aqui estão conteúdos relacionados à saúde e vida saudável."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "@tema_post:saude",
+      "dialog_node": "child_exp_saude",
+      "context": {
+        "fluxo_atual": "explorar_post",
+        "ultimo_tema_post": "saude"
+      },
+      "parent": "node_fluxo_explorar",
+      "previous_sibling": "child_exp_story",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_menu_principal"
+      }
+    },
+    {
+      "type": "standard",
+      "title": "Natureza",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Aqui estão conteúdos sobre natureza, ar livre e meio ambiente."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "@tema_post:natureza",
+      "dialog_node": "child_exp_natureza",
+      "context": {
+        "fluxo_atual": "explorar_post",
+        "ultimo_tema_post": "natureza"
+      },
+      "parent": "node_fluxo_explorar",
+      "previous_sibling": "child_exp_saude",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_menu_principal"
+      }
+    },
+    {
+      "type": "standard",
+      "title": "Desafio",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Aqui estão posts sobre desafios, competições e provas."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "@tema_post:desafio",
+      "dialog_node": "child_exp_desafio",
+      "context": {
+        "fluxo_atual": "explorar_post",
+        "ultimo_tema_post": "desafio"
+      },
+      "parent": "node_fluxo_explorar",
+      "previous_sibling": "child_exp_natureza",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_menu_principal"
+      }
+    },
+    {
+      "type": "standard",
+      "title": "Bem-estar",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Aqui estão conteúdos de bem-estar, treino e fitness."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "@tema_post:(bem estar)",
+      "dialog_node": "child_exp_bemestar",
+      "context": {
+        "fluxo_atual": "explorar_post",
+        "ultimo_tema_post": "bem estar"
+      },
+      "parent": "node_fluxo_explorar",
+      "previous_sibling": "child_exp_desafio",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_menu_principal"
+      }
+    },
+    {
+      "type": "standard",
+      "title": "Falha explorar",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Não consegui identificar o tipo de post. Tente dizer: foto, vídeo, story, saúde, natureza, desafio ou bem-estar."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "child_exp_else",
+      "context": {
+        "fluxo_atual": "explorar_post"
+      },
+      "parent": "node_fluxo_explorar",
+      "previous_sibling": "child_exp_bemestar"
+    },
+    {
+      "type": "standard",
+      "title": "Fluxo interagir com post",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Legal! O que você quer fazer com o post?\n\nVocê pode dizer: curtir, comentar, compartilhar ou salvar."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#interagir_post",
+      "dialog_node": "node_fluxo_interagir",
+      "context": {
+        "fluxo_atual": "interagir_post"
+      },
+      "previous_sibling": "node_fluxo_explorar"
+    },
+    {
+      "type": "standard",
+      "title": "Curtir saúde",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Você curtiu um conteúdo de saúde. Ótima escolha!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "@acao:curtir && @tema_post:saude",
+      "dialog_node": "child_int_curtir_saude",
+      "context": {
+        "fluxo_atual": "interagir_post",
+        "ultima_acao": "curtir",
+        "ultimo_tema_post": "saude"
+      },
+      "parent": "node_fluxo_interagir",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_menu_principal"
+      }
+    },
+    {
+      "type": "standard",
+      "title": "Comentar natureza",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Digite seu comentário para o conteúdo de natureza."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "@acao:comentar && @tema_post:natureza",
+      "dialog_node": "child_int_comentar_natureza",
+      "context": {
+        "fluxo_atual": "interagir_post",
+        "ultima_acao": "comentar",
+        "ultimo_tema_post": "natureza"
+      },
+      "parent": "node_fluxo_interagir",
+      "previous_sibling": "child_int_curtir_saude",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_menu_principal"
+      }
+    },
+    {
+      "type": "standard",
+      "title": "Curtir",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Você curtiu esse post!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "@acao:curtir",
+      "dialog_node": "child_int_curtir",
+      "context": {
+        "fluxo_atual": "interagir_post",
+        "ultima_acao": "curtir"
+      },
+      "parent": "node_fluxo_interagir",
+      "previous_sibling": "child_int_comentar_natureza",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_menu_principal"
+      }
+    },
+    {
+      "type": "standard",
+      "title": "Comentar",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Claro! Digite o comentário que deseja enviar."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "@acao:comentar",
+      "dialog_node": "child_int_comentar",
+      "context": {
+        "fluxo_atual": "interagir_post",
+        "ultima_acao": "comentar"
+      },
+      "parent": "node_fluxo_interagir",
+      "previous_sibling": "child_int_curtir",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_menu_principal"
+      }
+    },
+    {
+      "type": "standard",
+      "title": "Compartilhar",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Post compartilhado com sucesso!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "@acao:compartilhar",
+      "dialog_node": "child_int_compartilhar",
+      "context": {
+        "fluxo_atual": "interagir_post",
+        "ultima_acao": "compartilhar"
+      },
+      "parent": "node_fluxo_interagir",
+      "previous_sibling": "child_int_comentar",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_menu_principal"
+      }
+    },
+    {
+      "type": "standard",
+      "title": "Salvar",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Post salvo com sucesso para você ver depois."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "@acao:salvar",
+      "dialog_node": "child_int_salvar",
+      "context": {
+        "fluxo_atual": "interagir_post",
+        "ultima_acao": "salvar"
+      },
+      "parent": "node_fluxo_interagir",
+      "previous_sibling": "child_int_compartilhar",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_menu_principal"
+      }
+    },
+    {
+      "type": "standard",
+      "title": "Falha interagir",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Não consegui identificar a ação. Tente dizer: curtir, comentar, compartilhar ou salvar."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "child_int_else",
+      "context": {
+        "fluxo_atual": "interagir_post"
+      },
+      "parent": "node_fluxo_interagir",
+      "previous_sibling": "child_int_salvar"
+    },
+    {
+      "type": "standard",
+      "title": "Fluxo participar de desafio",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Boa! Escolha o nível, frequência ou tema do desafio:\n\n- fácil, médio ou difícil\n- diário, semanal ou mensal\n- saúde ou natureza"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#participar_desafio",
+      "dialog_node": "node_fluxo_desafio",
+      "context": {
+        "fluxo_atual": "participar_desafio"
+      },
+      "previous_sibling": "node_fluxo_interagir"
+    },
+    {
+      "type": "standard",
+      "title": "Fácil semanal",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Perfeito! Vou te mostrar desafios fáceis semanais."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "@nivel_desafio:facil && @frequencia:semanal",
+      "dialog_node": "child_des_facil_semanal",
+      "context": {
+        "fluxo_atual": "participar_desafio",
+        "ultimo_nivel_desafio": "facil",
+        "ultima_frequencia": "semanal"
+      },
+      "parent": "node_fluxo_desafio",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_menu_principal"
+      }
+    },
+    {
+      "type": "standard",
+      "title": "Médio diário",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Perfeito! Vou te mostrar desafios médios diários."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "@nivel_desafio:medio && @frequencia:diario",
+      "dialog_node": "child_des_medio_diario",
+      "context": {
+        "fluxo_atual": "participar_desafio",
+        "ultimo_nivel_desafio": "medio",
+        "ultima_frequencia": "diario"
+      },
+      "parent": "node_fluxo_desafio",
+      "previous_sibling": "child_des_facil_semanal",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_menu_principal"
+      }
+    },
+    {
+      "type": "standard",
+      "title": "Difícil mensal",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Perfeito! Vou te mostrar desafios difíceis mensais."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "@nivel_desafio:dificil && @frequencia:mensal",
+      "dialog_node": "child_des_dificil_mensal",
+      "context": {
+        "fluxo_atual": "participar_desafio",
+        "ultimo_nivel_desafio": "dificil",
+        "ultima_frequencia": "mensal"
+      },
+      "parent": "node_fluxo_desafio",
+      "previous_sibling": "child_des_medio_diario",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_menu_principal"
+      }
+    },
+    {
+      "type": "standard",
+      "title": "Fácil",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Vou te mostrar desafios fáceis para começar."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "@nivel_desafio:facil",
+      "dialog_node": "child_des_facil",
+      "context": {
+        "fluxo_atual": "participar_desafio",
+        "ultimo_nivel_desafio": "facil"
+      },
+      "parent": "node_fluxo_desafio",
+      "previous_sibling": "child_des_dificil_mensal",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_menu_principal"
+      }
+    },
+    {
+      "type": "standard",
+      "title": "Médio",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Vou te mostrar desafios de nível médio."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "@nivel_desafio:medio",
+      "dialog_node": "child_des_medio",
+      "context": {
+        "fluxo_atual": "participar_desafio",
+        "ultimo_nivel_desafio": "medio"
+      },
+      "parent": "node_fluxo_desafio",
+      "previous_sibling": "child_des_facil",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_menu_principal"
+      }
+    },
+    {
+      "type": "standard",
+      "title": "Difícil",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Vou te mostrar desafios difíceis para quem quer se superar."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "@nivel_desafio:dificil",
+      "dialog_node": "child_des_dificil",
+      "context": {
+        "fluxo_atual": "participar_desafio",
+        "ultimo_nivel_desafio": "dificil"
+      },
+      "parent": "node_fluxo_desafio",
+      "previous_sibling": "child_des_medio",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_menu_principal"
+      }
+    },
+    {
+      "type": "standard",
+      "title": "Diário",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Aqui estão os desafios diários disponíveis."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "@frequencia:diario",
+      "dialog_node": "child_des_diario",
+      "context": {
+        "fluxo_atual": "participar_desafio",
+        "ultima_frequencia": "diario"
+      },
+      "parent": "node_fluxo_desafio",
+      "previous_sibling": "child_des_dificil",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_menu_principal"
+      }
+    },
+    {
+      "type": "standard",
+      "title": "Semanal",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Aqui estão os desafios semanais disponíveis."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "@frequencia:semanal",
+      "dialog_node": "child_des_semanal",
+      "context": {
+        "fluxo_atual": "participar_desafio",
+        "ultima_frequencia": "semanal"
+      },
+      "parent": "node_fluxo_desafio",
+      "previous_sibling": "child_des_diario",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_menu_principal"
+      }
+    },
+    {
+      "type": "standard",
+      "title": "Mensal",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Aqui estão os desafios mensais disponíveis."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "@frequencia:mensal",
+      "dialog_node": "child_des_mensal",
+      "context": {
+        "fluxo_atual": "participar_desafio",
+        "ultima_frequencia": "mensal"
+      },
+      "parent": "node_fluxo_desafio",
+      "previous_sibling": "child_des_semanal",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_menu_principal"
+      }
+    },
+    {
+      "type": "standard",
+      "title": "Saúde",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Aqui estão desafios voltados para saúde e hábitos saudáveis."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "@tema_post:saude",
+      "dialog_node": "child_des_saude",
+      "context": {
+        "fluxo_atual": "participar_desafio",
+        "ultimo_tema_post": "saude"
+      },
+      "parent": "node_fluxo_desafio",
+      "previous_sibling": "child_des_mensal",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_menu_principal"
+      }
+    },
+    {
+      "type": "standard",
+      "title": "Natureza",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Aqui estão desafios ligados à natureza e atividades ao ar livre."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "@tema_post:natureza",
+      "dialog_node": "child_des_natureza",
+      "context": {
+        "fluxo_atual": "participar_desafio",
+        "ultimo_tema_post": "natureza"
+      },
+      "parent": "node_fluxo_desafio",
+      "previous_sibling": "child_des_saude",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_menu_principal"
+      }
+    },
+    {
+      "type": "standard",
+      "title": "Falha desafio",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Não consegui identificar o desafio. Tente dizer: fácil, médio, difícil, diário, semanal, mensal, saúde ou natureza."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "child_des_else",
+      "context": {
+        "fluxo_atual": "participar_desafio"
+      },
+      "parent": "node_fluxo_desafio",
+      "previous_sibling": "child_des_natureza"
+    },
+    {
+      "type": "standard",
+      "title": "Fluxo ver perfil",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Claro! Você quer ver informações do perfil, comunidades, status ou perfis por tema?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#ver_perfil",
+      "dialog_node": "node_fluxo_perfil",
+      "context": {
+        "fluxo_atual": "ver_perfil"
+      },
+      "previous_sibling": "node_fluxo_desafio"
+    },
+    {
+      "type": "standard",
+      "title": "Comunidades",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Aqui estão as comunidades SoulUp relacionadas a esse perfil."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "@tema_post:soulUp",
+      "dialog_node": "child_perfil_comunidades",
+      "context": {
+        "fluxo_atual": "ver_perfil",
+        "ultimo_tema_post": "soulUp"
+      },
+      "parent": "node_fluxo_perfil",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_menu_principal"
+      }
+    },
+    {
+      "type": "standard",
+      "title": "Saúde",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Aqui estão perfis e informações ligados ao tema saúde."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "@tema_post:saude",
+      "dialog_node": "child_perfil_saude",
+      "context": {
+        "fluxo_atual": "ver_perfil",
+        "ultimo_tema_post": "saude"
+      },
+      "parent": "node_fluxo_perfil",
+      "previous_sibling": "child_perfil_comunidades",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_menu_principal"
+      }
+    },
+    {
+      "type": "standard",
+      "title": "Natureza",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Aqui estão perfis relacionados à natureza e meio ambiente."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "@tema_post:natureza",
+      "dialog_node": "child_perfil_natureza",
+      "context": {
+        "fluxo_atual": "ver_perfil",
+        "ultimo_tema_post": "natureza"
+      },
+      "parent": "node_fluxo_perfil",
+      "previous_sibling": "child_perfil_saude",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_menu_principal"
+      }
+    },
+    {
+      "type": "standard",
+      "title": "Desafio",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Aqui estão perfis que participam de desafios."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "@tema_post:desafio",
+      "dialog_node": "child_perfil_desafio",
+      "context": {
+        "fluxo_atual": "ver_perfil",
+        "ultimo_tema_post": "desafio"
+      },
+      "parent": "node_fluxo_perfil",
+      "previous_sibling": "child_perfil_natureza",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_menu_principal"
+      }
+    },
+    {
+      "type": "standard",
+      "title": "Falha perfil",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Não consegui identificar qual parte do perfil você quer ver. Tente dizer: comunidades, saúde, natureza ou desafio."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "child_perfil_else",
+      "context": {
+        "fluxo_atual": "ver_perfil"
+      },
+      "parent": "node_fluxo_perfil",
+      "previous_sibling": "child_perfil_desafio"
+    },
+    {
+      "type": "standard",
+      "title": "Em outros casos",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Não consegui identificar sua intenção. Tente dizer: explorar posts, participar de desafio, curtir post ou ver perfil."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "node_anything_else",
+      "context": {
+        "fluxo_atual": "menu"
+      },
+      "previous_sibling": "node_fluxo_perfil",
+      "disambiguation_opt_out": true
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "disambiguation": {
+      "prompt": "Você quis dizer:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "Nenhuma das anteriores",
+      "use_connect_to_support_prompt": "Connect to support",
+      "single_answer_clarification_prompt": "Something else"
+    },
+    "human_agent_assist": {
+      "prompt": "Você quis dizer:"
+    }
+  },
+  "learning_opt_out": false,
+  "language": "pt-br",
+  "description": "Versão corrigida com cadeia de nós organizada, contexto padronizado, nós filhos por fluxo e continuações por contexto para respostas curtas.",
+  "name": "soulUpChalleng-dialog"
+}

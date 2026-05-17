@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="99820960-4380-AD86-7479-5125114B06E7" containerWithKeyObject="A9C3C3B6-536E-2BED-BCD7-CD4FCC92A0C3" localFKIndex="3066BA5A-4B78-12E6-3FF9-A6608BFDFF6E" name="historico_conversa_usuario_FK">
+<createdBy>yumin</createdBy>
+<createdTime>2026-05-15 23:10:34 UTC</createdTime>
+<generatorID>DF865B2A-C6D3-8016-F959-85E11E156B03</generatorID>
+<ownerDesignName>modelo_Challenge</ownerDesignName>
+<referredTableLongName>usuario</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>99731D00-346E-F730-D6CC-8DC9235FB062</referredTableID>
+<keyObject>CA16F919-6EA1-90B9-7404-1B86355B25DB</keyObject>
+<referredKeyID>CA16F919-6EA1-90B9-7404-1B86355B25DB</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_usuario</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

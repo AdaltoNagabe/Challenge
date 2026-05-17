@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_4" directorySegmentName="seg_0" id="DF865B2A-C6D3-8016-F959-85E11E156B03">
+<createdBy>yumin</createdBy>
+<createdTime>2026-05-15 23:04:40 UTC</createdTime>
+<ownerDesignName>modelo_Challenge</ownerDesignName>
+<engineerTo>
+<item key="AB6CB75E-7BBB-95AA-F9E8-B5F4C7E93268" value="true"/>
+</engineerTo>
+<sourcePk>C6E342B9-6397-E2F6-708D-C739988E5626</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>6C389B84-623E-4BCE-3638-2BFE6497060E</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>841460CB-BCD4-4A0C-3E25-9DD2820C984C</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

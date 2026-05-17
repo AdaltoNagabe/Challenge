@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="14A5F5BE-C239-DBF9-CB99-1C305FDFCF60" name="usuario_desafio">
+<createdBy>yumin</createdBy>
+<createdTime>2026-05-15 23:10:34 UTC</createdTime>
+<ownerDesignName>modelo_Challenge</ownerDesignName>
+<ordsAlias>relation_2</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_usuario" id="4326D724-C156-9234-3522-52BE97624DCA">
+<createdBy>yumin</createdBy>
+<createdTime>2026-05-15 23:10:34 UTC</createdTime>
+<ownerDesignName>modelo_Challenge</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AC07EF12-6D4A-5A2D-5311-7D03D0835D1F" referredColumn="B97AEC77-B5D3-2064-5760-0DBBC5FFD3E4"/>
+</associations>
+</Column>
+<Column name="id_desafio" id="6A1E7DB9-031A-BE0F-DA64-7EC14CC4B918">
+<createdBy>yumin</createdBy>
+<createdTime>2026-05-15 23:10:34 UTC</createdTime>
+<ownerDesignName>modelo_Challenge</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="38173BEB-45F4-1A6D-A6AF-2BF084EBBA82" referredColumn="1E82153A-4851-9491-0BA7-1195C7B9BD1B"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CB3F5CCE-FDB5-87C4-4C1D-673848696664" name="id_usuario_desafio_PK">
+<createdBy>yumin</createdBy>
+<createdTime>2026-05-15 23:10:34 UTC</createdTime>
+<ownerDesignName>modelo_Challenge</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4326D724-C156-9234-3522-52BE97624DCA"/>
+<colUsage columnID="6A1E7DB9-031A-BE0F-DA64-7EC14CC4B918"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0481A83B-C99D-78B1-E86C-C8145A8A60DC" name="Relation_2_usuario_FK">
+<createdBy>yumin</createdBy>
+<createdTime>2026-05-15 23:10:34 UTC</createdTime>
+<generatorID>FB92CCB9-FE77-AF9C-521F-0D327FDF21D4</generatorID>
+<ownerDesignName>modelo_Challenge</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4326D724-C156-9234-3522-52BE97624DCA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A724A718-1FA8-7A7E-F936-702B341009A9" name="Relation_2_desafio_FK">
+<createdBy>yumin</createdBy>
+<createdTime>2026-05-15 23:10:34 UTC</createdTime>
+<generatorID>FB92CCB9-FE77-AF9C-521F-0D327FDF21D4</generatorID>
+<ownerDesignName>modelo_Challenge</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6A1E7DB9-031A-BE0F-DA64-7EC14CC4B918"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="modelo_Challenge" id="B40A5913-B7BF-F6E4-3393-631BBCEE841D" version="3.5">
+<createdBy>labsfiap</createdBy>
+<createdTime>2026-05-13 23:12:18 UTC</createdTime>
+<ownerDesignName>modelo_Challenge</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>B40A5913-B7BF-F6E4-3393-631BBCEE841D</designId>
+</OSDM_Design>
