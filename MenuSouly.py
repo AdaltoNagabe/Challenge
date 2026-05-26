@@ -3,6 +3,8 @@ print('\n\nOlá, seja bem-vindo(a) à SoulUp!')
 print('Sou a Souly! Estou aqui para te ajudar a navegar pela nossa plataforma e aproveitar ao máximo as funcionalidades que oferecemos. \n')
 print('VAMOS COMEÇAR? \n')
 nome_usuario = input('Primeiro digite o seu nome: \n')
+
+#Esta linha de identificacao do usuario é meramente didático. Na prática, a identificação do usuário seria feita por meio de um sistema de login, onde o usuário já estaria logado na plataforma.
 print(f'\nOlá, {nome_usuario}! Escolha uma das opções e vamos navegar juntos: \n')
 
 # funcao para exibir o menu de opções para o usuário
